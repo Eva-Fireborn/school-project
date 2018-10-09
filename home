@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+<h1>Skolövning HTML</h1>
+</head>
+<body>
+<h2>Internet</h2>
+<p>
+  En del viktiga begrepp att kunna:
+</p>
+<ul>
+  <li><strong>the World Wide Web Consortium,</strong> eller W3C som är förkortningen, är en organisation som skriver de standarder som används på internet.</li>
+  <li><strong>Web server,</strong> ett serverprogram som levererar websidor, detta är i många fall en fysisk dator.</li>
+  <li><strong>Client,</strong> är oftast en webbläsare, som kommunicerar med webservrar.</li>
+  <li><strong>Protocol,</strong> protokoll är en metod för att skicka trafik över internet. Exempelvis:
+    <ol>
+      <li>HTTP</li>
+      <li>HTTPS</li>
+      <li>FTP</li>
+      <li>POP</li>
+      <li>IMAP</li>
+    </ol>
+  </li>
+  <li><strong>API,</strong> web service, en tjänst som exponeras på internet så att vi kan använda den på våra sidor.</li>
+  <li><strong>URL,</strong> Uniform Resource Locator, är adressen till hemsidor.</li>
+</ul>
+<hr>
+<h2>URL</h2>
+<pre>
+Här är en adress till en hemsida: <a href="https://sv.wikipedia.org/wiki/Flygande_tefat">https://sv.wikipedia.org/wiki/Flygande_tefat</a>
+
+https://                         Talar om vilket protokoll som används.
+sv                                 Subdomän
+wikipedia                     Server
+org                               Domän
+wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill åt.
+</pre>
+<hr>
+<h2>Error 404</h2>
+<img src="https://hyperallergic.com/wp-content/uploads/2017/05/museum404d-e1495221332896-1080x510.jpg" alt="Bilden är inte tillgänglig">
+<p>När vi skriver in en URL letar webservern efter resursen och returnerar en tresiffrig statuskod. Om den hittar websidan returneras koden 200,<br> men det syns inte för då visar webbläsaren upp sidan i stället. Koder som börjar med 2 motsvarar att anropet lyckades.</p>
+<p>Om webbläsaren misslyckas med att hitta den efterfrågade resursen returneras en kod som börjar på 4 eller 5. <br> Den vanligaste är 404 “not found”, som man får om servern inte hittar någon resurs.<br> Bilden ovan är ett exempel på en 404 sida.
+</p>
+<hr>
+<h2>HTML-Dokument</h2>
+<p><b>En webbsida består av en textfil i HTML-format och andra länkade filer. Filnamnet slutar ofta på .html.</b></p>
+<p>En <em>statisk</em> webbsida består av en eller flera filer som webbservern kan skicka till webbläsaren direkt. Statiska sidor hör till <em>frontend.</em></p>
+<p>En <em>dynamisk</em> webbsida innehåller någon form av kod som måste köras av webbservern för att skapa den riktiga sidan. Exempel: PHP, ASP.NET och Node.js. Kod som körs på servern kallas för <em>backend.</em></p>
+<hr>
+<h2>Vad är HTML?</h2>
+<ul style="list-style-type:square">
+  <li>HTML=Hyper Text Markup Language</li>
+  <li>Språket alla webbsidor använder</li>
+  <li>Representerar <i>innehåll</i> (content)</li>
+  <li>Ignorerar whitespace och stora/små bokstäver (men använd små)</li>
+  <li>Innehåller taggar: &lttag&gt innehåll &lt/tag&gt <br>
+    eller &lttag/&gt (om taggen inte har något innehåll)
+  </li>
+  <li>Från <b>HTML</b> bygger webbläsaren upp <b>DOM</b>=Document Object Model, som motsvarar strukturen för en sida</li>
+  <li>Semantiken fören webbsida, inte layour och inte formatering</li>
+  <li>Taggar kallas också för element</li>
+</ul>
+<hr>
+<h2>HTML vs. CSS vs. JavaScript</h2>
+<pre>Syftet med <b>HTML</b> är att beskriva sidans <b>innehåll</b> (content)<b> och struktur.</b>
+"Den här texten ska finnas på sidan."
+
+<b>CSS</b> beskriver hur taggar/element ska <b>presenteras.</b>
+"De här elementen ska ha röd textfärg och vara understruket."
+
+<b>JavaScript</b> hanterat <b>användarens interaktion</b> med sidan.
+"När jag klickar på knappen ska det här hända."
+
+<em>Separation of concerns</em> innebär att man inte vill blanda in HTML, CSS och JavaScript utan ha dem i separata filer.
+</pre>
+<hr>
+<h2>Exempel HTML-sida</h2>
+<table style="width:40%">
+  <tr>
+    <th>&lt!DOCTYPE html&gt</th>
+    <th>Talar om att sidan är i HTML format</th> 
+  </tr>
+  <tr>
+    <th>&lthtml lang="en"&gt</th>
+    <th>Här börjar HTML-koden("sv" för svenska)</th> 
+  </tr>
+  <tr>
+    <th>&lthead&gt</th>
+    <th>Innehåller metadata för sidan</th>
+  </tr>
+  <tr>
+    <th>&lt&meta charset="utf-8"&gt</th>
+    <th>Teckenuppsättning</th>
+  </tr>
+  <tr>
+    <th>&lttitle&gtPage title&lt/title&gt</th>
+    <th>Rubrik för sidan</th>
+  </tr>
+  <tr>
+    <th>&lt/head&gt</th>
+  </tr>
+  <tr>
+    <th>&ltbody&gt</th>
+    <th>Sidokropp, innehållet</th>
+  </tr>
+  <tr>
+    <th><pre>               <b>Hello World</b></pre></th>
+  </tr>
+  <tr>
+    <th>&lt/body&gt</th>
+  </tr>
+  <tr>
+    <th>&lt/html&gt</th>
+    <th>Här slutar HTML-koden</th>
+  </tr>
+</table>
+  <hr>
+  <h2>Taggens anatomi</h2>
+<pre>&lt<mark>tag</mark> <mark2>attribute</mark2>="value"&gt <mark3>content</mark3> &lt/<mark>tag</mark>&gt
+  <em>eller</em>   &lttag /&gt   <em>eller</em>   &lttag&gt (avslutas inte, ovanligt)</pre>
+<p>Ex: &lt<mark>a</mark> <mark2>href</mark2>="http://htmledit.squarefree.com/"&gt <mark3>HTML editor</mark3> &lt/<mark>a</mark>&gt</p>
+<p> <b>a</b> - taggens <em>namn</em></p>
+<p><b>href</b> - ett av taggens <em>attribut</em> (href=<u>h</u>ypertext <u>ref</u>erence)</p>
+<p>De flesta element ska avslutas. <br>
+  Andra vanliga attribut är <em>id</em> och <em>class,</em> som är viktiga för JavaScript och CSS.<br>
+  Värdet på id-attributet ska vara unikt för hela dokumentet.<br>
+  Värdet på class-attributet kan vara samma för flera taggar.</p>
+<hr>
+<h2>Viktiga taggar</h2>
+<table style="width:40%">
+  <tr>
+    <th>h1-h6</th>
+    <th>Rubriker (h=heading)</th>
+  </tr>
+  <tr>
+    <th>p, pre, code</th>
+    <th>Olika sorters textstycken</th>
+  </tr>
+  <tr>
+    <th>a</th>
+    <th>Länkar, a står för "anchor"</th>
+  </tr>
+  <tr>
+    <th>string, em, b, i, u</th>
+    <th>Olika sätt att betona text</th>
+  </tr>
+  <tr>
+    <th>br, hr, div, span, style</th>
+    <th>Radbrytning och taggar för formatering och layout</th>
+  </tr>
+  <tr>
+    <th>img</th>
+    <th>Bilder</th>
+  </tr>
+  <tr>
+    <th>ul, ol, li</th>
+    <th>Listor</th>
+  </tr>
+  <tr>
+    <th>table</th>
+    <th>Tabell för data</th>
+  </tr>
+  <tr>
+    <th>form</th>
+    <th>Formulär där användaren kan skriva in data</th>
+  </tr>
+  <tr>
+    <th>style</th>
+    <th>CSS-stil</th>
+  </tr>
+</table>
+<hr>
+<h2>Olika sorters element</h2>
+<p><strong>Block element:</strong> en tag som alltid börjar på en ny rad och fyller ut hela det tillgängliga utrymmeti bredd. Exempel: p, ul, div.</p>
+<p><strong>Inline element:</strong> en tag som inte börjar en ny rad och tar bara precis så mycket plats som det behöver. Exempel: a, string, span.</p>
+<div style="background-color:lightblue">
+  <del>Skapad av Fireborn</del>
+</div>
+</body>
+</html>
