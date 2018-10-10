@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-<title>Skolövning HTML</title>
-</head>
-<body>
-<h1>Skolövning HTML</h1>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Övning 8.1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="background-color:#808000">
+    <script src="script.js"></script>
+    <h1>Skolövning 8.1</h1>
 <h2>Internet</h2>
 <p>
   En del viktiga begrepp att kunna:
@@ -27,14 +31,14 @@
 </ul>
 <hr>
 <h2>URL</h2>
-<pre>
+<pre style="font-family: times new roman;">
 Här är en adress till en hemsida: <a href="https://sv.wikipedia.org/wiki/Flygande_tefat">https://sv.wikipedia.org/wiki/Flygande_tefat</a>
 
-https://                         Talar om vilket protokoll som används.
-sv                                 Subdomän
-wikipedia                     Server
-org                               Domän
-wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill åt.
+https://                          Talar om vilket protokoll som används.
+sv                                  Subdomän
+wikipedia                      Server
+org                                Domän
+wiki/Flygande_tefat     Namn och sökväg till websidan eller  resursen vi vill åt.
 </pre>
 <hr>
 <h2>Error 404</h2>
@@ -54,8 +58,8 @@ wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill �
   <li>Språket alla webbsidor använder</li>
   <li>Representerar <i>innehåll</i> (content)</li>
   <li>Ignorerar whitespace och stora/små bokstäver (men använd små)</li>
-  <li>Innehåller taggar: &lttag&gt innehåll &lt/tag&gt <br>
-    eller &lttag/&gt (om taggen inte har något innehåll)
+  <li>Innehåller taggar: &lt;tag&gt; innehåll &lt;/tag&gt; <br>
+    eller &lt;tag/&gt; (om taggen inte har något innehåll)
   </li>
   <li>Från <b>HTML</b> bygger webbläsaren upp <b>DOM</b>=Document Object Model, som motsvarar strukturen för en sida</li>
   <li>Semantiken fören webbsida, inte layour och inte formatering</li>
@@ -63,7 +67,7 @@ wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill �
 </ul>
 <hr>
 <h2>HTML vs. CSS vs. JavaScript</h2>
-<pre>Syftet med <b>HTML</b> är att beskriva sidans <b>innehåll</b> (content)<b> och struktur.</b>
+<pre style="font-family: Times new roman;">Syftet med <b>HTML</b> är att beskriva sidans <b>innehåll</b> (content)<b> och struktur.</b>
 "Den här texten ska finnas på sidan."
 
 <b>CSS</b> beskriver hur taggar/element ska <b>presenteras.</b>
@@ -76,50 +80,54 @@ wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill �
 </pre>
 <hr>
 <h2>Exempel HTML-sida</h2>
-<table style="width:40%">
+<table style="width:60%; text-align: left;">
   <tr>
-    <th>&lt!DOCTYPE html&gt</th>
+    <th>&lt;!DOCTYPE html&gt;</th>
     <th>Talar om att sidan är i HTML format</th> 
   </tr>
   <tr>
-    <th>&lthtml lang="en"&gt</th>
+    <th>&lt;html lang="en"&gt;</th>
     <th>Här börjar HTML-koden("sv" för svenska)</th> 
   </tr>
   <tr>
-    <th>&lthead&gt</th>
+    <th>&lt;head&gt;</th>
     <th>Innehåller metadata för sidan</th>
   </tr>
   <tr>
-    <th>&lt&meta charset="utf-8"&gt</th>
+    <th>&lt;&meta charset="utf-8"&gt;</th>
     <th>Teckenuppsättning</th>
   </tr>
   <tr>
-    <th>&lttitle&gtPage title&lt/title&gt</th>
+    <th>&lt;title&gt;Page title&lt;/title&gt;</th>
     <th>Rubrik för sidan</th>
   </tr>
   <tr>
-    <th>&lt/head&gt</th>
+    <th>&lt;/head&gt;</th>
+    <th></th>
   </tr>
   <tr>
-    <th>&ltbody&gt</th>
+    <th>&lt;body&gt;</th>
     <th>Sidokropp, innehållet</th>
   </tr>
   <tr>
-    <th><pre>               <b>Hello World</b></pre></th>
+    <th><pre style="font-family: times new roman;">     <b>Hello World</b></pre></th>
+    <th></th>
   </tr>
   <tr>
-    <th>&lt/body&gt</th>
+    <th>&lt;/body&gt;</th>
+    <th></th>
   </tr>
   <tr>
-    <th>&lt/html&gt</th>
+    <th>&lt;/html&gt;</th>
     <th>Här slutar HTML-koden</th>
   </tr>
 </table>
   <hr>
   <h2>Taggens anatomi</h2>
-<pre>&lt<mark>tag</mark> <mark2>attribute</mark2>="value"&gt <mark3>content</mark3> &lt/<mark>tag</mark>&gt
-  <em>eller</em>   &lttag /&gt   <em>eller</em>   &lttag&gt (avslutas inte, ovanligt)</pre>
-<p>Ex: &lt<mark>a</mark> <mark2>href</mark2>="http://htmledit.squarefree.com/"&gt <mark3>HTML editor</mark3> &lt/<mark>a</mark>&gt</p>
+<pre style="font-family:Times new roman;">&lt;<mark style="background-color: green;">tag</mark> <mark style="background-color: blue; color: white;">attribute</mark>="value"&gt; <mark style="background-color: red;">content</mark> &lt;/<mark style="background-color:green;">tag</mark>&gt;
+  <em>eller</em>   &lt;<mark style="background-color:green;">tag</mark> /&gt;   <em>eller</em>   &lt;<mark style="background-color:green;">tag</mark>&gt; (avslutas inte, ovanligt)</pre>
+
+<p>Ex: &lt;<mark style="background-color:green;">a</mark> <mark style="background-color: blue; color: white;">href</mark>="http://htmledit.squarefree.com/"&gt; <mark style="background-color: red;">HTML editor</mark> &lt;/<mark style="background-color:green;">a</mark>&gt;</p>
 <p> <b>a</b> - taggens <em>namn</em></p>
 <p><b>href</b> - ett av taggens <em>attribut</em> (href=<u>h</u>ypertext <u>ref</u>erence)</p>
 <p>De flesta element ska avslutas. <br>
@@ -177,5 +185,6 @@ wiki/Flygande_tefat    Namn och sökväg till websidan eller  resursen vi vill �
 <div style="background-color:lightblue">
   <del>Skapad av Fireborn</del>
 </div>
-</body>
+<button>Report site to the Elders of the Internet</button>
+  </body>
 </html>
