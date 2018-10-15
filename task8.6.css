@@ -1,0 +1,50 @@
+
+.header {
+  text-align: center;
+  width: 25%;
+  position: absolute;
+}
+.main{
+  display: table;
+  border: 2px solid lightgray;
+  font-family: times new roman;
+  text-align: left;
+  width: 25%;
+  border-spacing: 0.1em;
+  font-size: 1em;
+  position: absolute;
+  background-color: #ecf9c0;
+  top: 3em;
+}
+.tablerow{
+    display: table-row;
+  }
+.tablecell, .tablehead{
+      display: table-cell;
+    }
+.tablecell{
+  border:gray 2px dotted;
+  padding: 0.1em;
+}
+.tablehead{
+  padding: 0.1em;
+  border:brown 2px dashed;
+  background-color: #ffd35b;
+  text-align: center;
+  font-weight: bold;
+}
+.tablecell:nth-child(4){
+  text-align: right;
+}
+.tablecell:nth-child(3){
+  text-align: center;
+}
+.firstplace {
+  background-color: gold;
+}
+.secondplace {
+  background-color: silver;
+}
+.thirdplace {
+  background-color: darkgoldenrod;
+}
