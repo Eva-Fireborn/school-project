@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+body > div{
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px
+}
+body > div > img {
+    width: 100%;
+    height: auto;
+}
+.horse {
+  position: absolute;
+  top: 3em;
+  left: 6.5em;
+  width: 100px;
+  opacity: 0.5;
+}
+a > img {
+  width: 100px;
+}
+.horse:hover {
+  opacity: 1;
+}
+.funny {
+  position: absolute;
+  top: 3em;
+  left: 14.8em;
+  width: 100px;
+  opacity: 0.5;
+}
+.funny:hover {
+  opacity: 1;
+
+}
+.table {
+  position: absolute;
+  top: 3em;
+  left: 23em;
+  width: 100px;
+  opacity: 0.5;
+}
+.table:hover {
+  opacity: 1;
+}
+.squares {
+  position: absolute;
+  top: 8em;
+  left: 10em;
+  width: 100px;
+  opacity: 0.5;
+  
+}
+.squares:hover {
+  opacity: 1;
+}
+.bright {
+  position: absolute;
+  top: 8em;
+  left: 18.8em;
+  width: 100px;
+  opacity: 0.5;
+}
+.bright:hover {
+  opacity: 1;
+}
