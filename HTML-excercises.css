@@ -13,22 +13,20 @@ body > div > img {
 }
 .horse {
   position: absolute;
-  top: 3em;
-  left: 6.5em;
-  width: 100px;
+  top: 8em;
+  left: 22em;
   opacity: 0.5;
 }
 a > img {
-  width: 100px;
+  width: 300px;
 }
 .horse:hover {
   opacity: 1;
 }
 .funny {
   position: absolute;
-  top: 3em;
-  left: 14.8em;
-  width: 100px;
+  top: 8em;
+  left: 50em;
   opacity: 0.5;
 }
 .funny:hover {
@@ -37,9 +35,8 @@ a > img {
 }
 .table {
   position: absolute;
-  top: 3em;
-  left: 23em;
-  width: 100px;
+  top: 8em;
+  left: 76em;
   opacity: 0.5;
 }
 .table:hover {
@@ -47,9 +44,8 @@ a > img {
 }
 .squares {
   position: absolute;
-  top: 8em;
-  left: 10em;
-  width: 100px;
+  top: 24em;
+  left: 36em;
   opacity: 0.5;
   
 }
@@ -58,9 +54,8 @@ a > img {
 }
 .bright {
   position: absolute;
-  top: 8em;
-  left: 18.8em;
-  width: 100px;
+  top: 24em;
+  left: 63em;
   opacity: 0.5;
 }
 .bright:hover {
