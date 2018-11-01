@@ -1,0 +1,27 @@
+body {
+    background-color: slategrey;
+}
+.rounded {
+    position: fixed;
+    left: 100px;
+    top: 50px;
+    border-radius: 100%;
+    background-color: palevioletred;
+    border: 2px dotted black;
+}
+.transform {
+    position: fixed;
+    left: 100px;
+    top: 300px;
+    background-color: goldenrod;
+    border-radius: 0%;
+    transition: border-radius 3s;
+    border: 2px dotted black;
+}
+.transform:hover {
+    border-radius: 100%;
+}
+div {
+    width: 200px;
+    height: 200px;
+}
