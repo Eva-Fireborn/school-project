@@ -22,7 +22,7 @@ li:hover > ul.secondList {  /* 0022 */
     visibility: visible;
     opacity: 1; 
     display: block;
-    transition: visibility 0s, opacity 0.5s linear, display 5s;
+    /*transition: visibility 5s, opacity 0.5s linear, display 5s;*/
 }
 li {
     font-size: 1.5em;
