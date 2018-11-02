@@ -1,0 +1,27 @@
+body {
+    background-color: honeydew;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: grey;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-align: center;
+    color: white;;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: darkgrey;
+}

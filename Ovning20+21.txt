@@ -1,0 +1,25 @@
+ÖVNING 20
+A: td:nth(2)
+B: nav > li, eventuellt nav li
+C: ol > li
+D: h1 + div
+E: href, button
+
+ÖVNING 21
+A: p			(0001)
+B: div div		(0002)
+C: :hover		(0010)
+D: div > :hover		(0011)
+E: .one .two .three	(0030)
+F: .one > #something li	(0111)
+G: div.classy ul li	(0013)
+H: *			(1111)
+RANGORDNAD ORDNING:
+*			(1111)
+.one > #something li	(0111)
+.one .two .three	(0030)
+div.classy ul li	(0013)
+div > :hover		(0011)
+:hover			(0010)
+div div			(0002)
+p			(0001)
