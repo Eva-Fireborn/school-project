@@ -1,0 +1,31 @@
+.newColor {
+    color: peru;
+    transition: color 1s;
+}
+.newColor:hover {
+    color: brown;
+}
+button {
+    position: relative;
+    left: 50px;
+    transition: transform 2s;
+}
+button:hover {
+    transform: scale(2,2);
+}
+div{
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    border: 2px dotted black;
+    transform: skewY(20deg);
+    transition: transform 1s, right 5s linear;
+
+}
+p {
+    padding-left: 70px;
+}
+div:hover {
+    transform: skewY(0deg);
+    right: 50%;
+}
