@@ -1,0 +1,63 @@
+input {
+    width: 150px;
+    height: 20px;
+    border-radius: 5%;
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+input:focus{
+    border: 1px solid red;
+}
+input[name=YearMonth] {
+    width: 50px;
+    margin-right: 450px;
+}
+select {
+    margin-right: 300px;
+}
+label {
+    margin-right: 300px;
+}
+input[name=namePassword]{
+    margin-right: 50px;
+}
+input[name=nameSur]{
+    margin-right: 50px;
+}
+input[name=postcode]{
+    margin-right: 50px;
+}
+.oldUser {
+    position: relative;
+    top: 5px;
+    width: 500px;
+    left: 20px;
+}
+.newUser {
+    position: relative;
+    top: 30px;
+    width: 500px;
+    left: 20px;
+}
+.card {
+    position: relative;
+    top: 100px;
+    width: 500px;
+    left: 20px;
+}
+h1 {
+    margin-left: 20px;
+}
+input[type=button]{
+    background-color: rgb(167, 86, 167);
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+input[type=button]:hover{
+    background-color: rgb(143, 77, 204);
+    color: white;
+    border: none;
+    text-decoration: none;
+}

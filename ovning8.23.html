@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Övning8.23</title>
+  <link href="ovning8.23.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Betalningsinformation</h1>
+    <div  class="oldUser">
+    <form>
+        <label for="Username">Redan användare? Logga in</label>
+        <input type="text" name="nameUser" id="Username" placeholder="e-mail"/>
+        <input type="password" name="namePassword" id="Username" placeholder="lösenord"/>
+    </form>
+</div>
+<div class="newUser">
+    <form>
+        <label for="newUser">Ny användare</label>
+        <input type="text" name="nameUser" placeholder="e-mail"/>
+        <input type="password" name="namePassword" name="nameUser" placeholder="lösenord"/>
+        <input type="text" name="name" name="nameUser" placeholder="namn">
+        <input type="text" name="nameSur" name="nameUser" placeholder="efternamn"/>
+        <input type="text" name="address" name="nameUser" placeholder="gata"/>
+        <input type="text" name="postcode" name="nameUser" placeholder="postnummer"/>
+        <input type="text" name="city" name="nameUser" placeholder="stad"/>
+        <input type="date" name="dateOfBirth" name="nameUser" value="default value"/>
+    </form>
+</div>
+<div class="card">
+    <form>
+        <label for="card">Kortuppgifter</label>
+        <select id="card">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+        </select>
+        <input type="text" name="cardNumber" placeholder="kortnummer"/>
+        <input type="password" name="verificationNumber" placeholder="verifieringssiffror"/>
+        <input type="text" name="YearMonth" placeholder="mån/år"/>
+        <textarea rows="4" cols="50" placeholder="övriga upplysningar"></textarea>
+        <input type="button" value="Bekräfta beställning"/>
+        <input type="button" value="Avbryt"/>
+    </form>
+</div>
+    
+</body>
+</html>
