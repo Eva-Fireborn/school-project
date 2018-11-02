@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+h1, p {
+    text-align: center;
+    color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div {
+    width: 570px;
+}
+h1 {
+    font-size: 20px;
+}

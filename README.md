@@ -14,7 +14,8 @@ School project EC utbildning
 <a href="https://eva-fireborn.github.io/school-project/ovning8.14.html">Övning 8.14</a><br>
 <a href="https://eva-fireborn.github.io/school-project/ovning8.15.html">Övning 8.15</a><br>
 <a href="https://eva-fireborn.github.io/school-project/ovning8.17.html">Övning 8.17</a><br>
-<a href="https://eva-fireborn.github.io/school-project/ovning8.18.html">Övning 8.18</a>
+<a href="https://eva-fireborn.github.io/school-project/ovning8.18.html">Övning 8.18</a><br>
+<a href="https://eva-fireborn.github.io/school-project/ovning8.19.html">Övning 8.19</a>
 </p> 
 <p>Skapat av Eva Fireborn</p>
 
