@@ -1,0 +1,14 @@
+#checkList {
+    border: 2px solid black;
+    background-color: pink;
+  }
+  .counter {
+    background-color: yellow;
+    border: 2px solid black;
+  }
+  #correctPassword {
+    color: green;
+  }
+  #wrongPassword {
+    color: red;
+  }
