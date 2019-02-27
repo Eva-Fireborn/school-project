@@ -210,7 +210,67 @@ const LockView = Backbone.View.extend({
     this.model.checkPassword();
   },
 });
+
+const CalculatorModel = Backbone.Model.extend({
+    defaults: {
+        firstNumber: 5,
+        secondNumber: 5,
+        answer: false,
+        input: ''
+    },
+    randomNumbers: function(){
+        if (this.get('firstNumber') + this.get('secondNumber') == this.get('input')){
+            this.set({answer: true})
+        } else {
+            this.set({answer: false})
+        }
+        let first = Math.ceil(Math.random() * 10);
+        let second = Math.ceil(Math.random() * 10);
+        this.set({firstNumber: first});
+        this.set({secondNumber: second});
+    }
+});
+let calculatorModel = new CalculatorModel({});
+
+const CalculatorView = Backbone.View.extend({
+    initialize: function() {
+        this.listenTo(this.model, 'change', this.render);
+      },
+    render: function () {
+        let input = this.model.get('input');
+        let welcomeText = `<h1>Kalkylator</h1></br><p>Skriv in rätt svar</p></br>`;
+        let form = `<input type="text" id="calculatorForm" value="${input}"><button id="calculatorButton">Svara</button>`;
+        let firstNumber = this.model.get('firstNumber');
+        let secondNumber = this.model.get('secondNumber');
+        let numbers = `<p>${firstNumber}+${secondNumber}</p>`
+        let answer = this.model.get('answer')
+        let correct = `<p>Rätt svar!</p>`;
+        let wrong = `<p>Fel svar!</p>`;  
+        if (answer){
+            this.$el.html(`${welcomeText}${numbers}${form}${correct}`)
+        } else {
+            this.$el.html(`${welcomeText}${numbers}${form}${wrong}`)
+        }
+    },
+    events: {
+        "click #calculatorButton": 'randomNumbers',
+    },
+    randomNumbers: function(){
+        this.model.set({input: $('#calculatorForm').val()})
+        this.model.randomNumbers();
+    }, 
+});
+
+/*Document ready function */
 $(document).ready(function(){
+
+    let calculatorView = new CalculatorView({
+        el: '.calculator',
+        model: calculatorModel
+    });
+    calculatorView.render();
+
+
    let lockView = new LockView({
     el: '.lock',
     model: inputLock
